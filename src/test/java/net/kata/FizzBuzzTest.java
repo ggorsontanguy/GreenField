@@ -1,6 +1,6 @@
 package net.kata;
 
-import org.junit.Assert;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
@@ -18,7 +18,7 @@ public class FizzBuzzTest {
 		String actual = FizzBuzz.compute(number );
 		// then
 		String expected = "Fizz";
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 	}
 	
 	@Test
@@ -29,7 +29,7 @@ public class FizzBuzzTest {
 		String actual = FizzBuzz.compute(number );
 		// then
 		String expected = String.valueOf(number);
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 	}
 	
 	@Test
@@ -40,7 +40,7 @@ public class FizzBuzzTest {
 		String actual = FizzBuzz.compute(number );
 		// then
 		String expected = "Buzz";
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 	}
 	
 	@Test
@@ -51,6 +51,6 @@ public class FizzBuzzTest {
 		String actual = FizzBuzz.compute(number );
 		// then
 		String expected = "FizzBuzz";
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 	}
 }

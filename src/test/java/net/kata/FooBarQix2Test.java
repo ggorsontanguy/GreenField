@@ -1,9 +1,10 @@
 package net.kata;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -22,7 +23,7 @@ public class FooBarQix2Test {
 		String actual = compute(number);
 		String expected="Foo";
 		// THEN
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		
 	}
 	
@@ -35,7 +36,7 @@ public class FooBarQix2Test {
 		String actual = compute(number);
 		String expected=String.valueOf(number);
 		// THEN
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		
 	}
 	
@@ -48,7 +49,7 @@ public class FooBarQix2Test {
 		String actual = compute(number);
 		String expected="FooFoo";
 		// THEN
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		
 	}
 	
@@ -61,7 +62,7 @@ public class FooBarQix2Test {
 		String actual = compute(number);
 		String expected="FooFooFoo";
 		// THEN
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		
 	}
 
